@@ -43,7 +43,7 @@ var contactList = [
 ];
 
 
-
+// this is for featching contact from database
 app.get('/', function(req, res){
    
     Contact.find().then((contacts) => {
@@ -65,6 +65,7 @@ app.get('/practice', async function(req, res){
     });
 });
 
+// this is for creating data and store in database
 app.post('/create-contact', function(req, res,)
 {  
     Contact.create({
